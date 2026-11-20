@@ -8,9 +8,8 @@ jobs:
       - uses: geode-sdk/build-geode-mod@main
         id: build
         with:
-          sdk: nightly
-          target: Windows
           combine: true
+          target: Windows
       - uses: actions/upload-artifact@v4
         with:
           name: build-output
